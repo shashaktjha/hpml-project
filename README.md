@@ -36,7 +36,7 @@ This project focuses on evaluating the impact of model compression techniques on
 ## Example Commands to Execute the Code
 ```bash
 sbatch bash.sh
-
+'''
 
 Results
 Inference Time Improvements
