@@ -1,37 +1,42 @@
-README for HPML Project: Model Compression Techniques on Deep Neural Networks
-Project Description
+# HPML Project: Model Compression Techniques on Deep Neural Networks
+
+## Project Description
 This project focuses on evaluating the impact of model compression techniques on the performance of Transformer-based large language models (LLMs), specifically using RoBERTa. The primary goal is to investigate how techniques like quantization, pruning, and knowledge distillation can reduce the size and computational demand of these models without significantly compromising their performance.
 
-Project Milestones
-Milestone 1: Setup and Baseline Measurement
-Status: Completed
-Activities: Configured the RoBERTa model and measured baseline performance metrics.
-Milestone 2: Implement Quantization
-Status: Completed
-Activities: Applied post-training dynamic quantization and measured the impact on inference time and model size.
-Milestone 3: Implement Pruning
-Status: Completed
-Activities: Applied unstructured pruning at various levels (30%, 60%, 90%) to the RoBERTa model and analyzed performance.
-Milestone 4: Implement Knowledge Distillation
-Status: Completed
-Activities: Developed a knowledge distillation setup from a larger teacher model to a smaller student model.
-Milestone 5: Evaluation and Analysis
-Status: Completed
-Activities: Evaluated and compared the effects of each compression technique on inference time and output accuracy.
-Repository and Code Structure
-Knowledge_Distillation.py: Script for setting up and evaluating the teacher-student knowledge distillation.
-model_compression_ddl.py: Contains functions for data preparation, model training with pruning, and evaluation.
-profiling.py: Includes performance profiling for quantized models to understand runtime behavior and resource utilization.
-pruning.py: Script for applying and evaluating different levels of pruning.
-quantization.py: Implements and evaluates the model quantization process.
-bash.sh: Bash script for running the project on the NYU HPC cluster with SLURM job scheduling.
-Example Commands to Execute the Code
-To run the model compression with distributed deep learning:
+## Project Milestones
 
-bash
-Copy code
+### Milestone 1: Setup and Baseline Measurement
+- **Status:** Completed
+- **Activities:** Configured the RoBERTa model and measured baseline performance metrics.
+
+### Milestone 2: Implement Quantization
+- **Status:** Completed
+- **Activities:** Applied post-training dynamic quantization and measured the impact on inference time and model size.
+
+### Milestone 3: Implement Pruning
+- **Status:** Completed
+- **Activities:** Applied unstructured pruning at various levels (30%, 60%, 90%) to the RoBERTa model and analyzed performance.
+
+### Milestone 4: Implement Knowledge Distillation
+- **Status:** Completed
+- **Activities:** Developed a knowledge distillation setup from a larger teacher model to a smaller student model.
+
+### Milestone 5: Evaluation and Analysis
+- **Status:** Completed
+- **Activities:** Evaluated and compared the effects of each compression technique on inference time and output accuracy.
+
+## Repository and Code Structure
+- `Knowledge_Distillation.py`: Script for setting up and evaluating the teacher-student knowledge distillation.
+- `model_compression_ddl.py`: Contains functions for data preparation, model training with pruning, and evaluation.
+- `profiling.py`: Includes performance profiling for quantized models to understand runtime behavior and resource utilization.
+- `pruning.py`: Script for applying and evaluating different levels of pruning.
+- `quantization.py`: Implements and evaluates the model quantization process.
+- `bash.sh`: Bash script for running the project on the NYU HPC cluster with SLURM job scheduling.
+
+## Example Commands to Execute the Code
+```bash
 sbatch bash.sh
-Ensure the script name in bash.sh matches the Python script you intend to run, and adjust the SLURM parameters as necessary for your HPC environment.
+
 
 Results
 Inference Time Improvements
