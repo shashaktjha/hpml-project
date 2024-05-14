@@ -38,6 +38,7 @@ This project focuses on evaluating the impact of model compression techniques on
 sbatch bash.sh
 '''
 
+
 Results
 Inference Time Improvements
 Baseline Inference Time: GPU: 0.142559s, CPU: 0.227092s
