@@ -39,8 +39,8 @@ sbatch bash.sh
 ```
 
 
-### Results
-## Inference Time Improvements
+## Results
+### Inference Time Improvements
 Baseline Inference Time: GPU: 0.142559s, CPU: 0.227092s
 Quantization: Reduced inference time to GPU: 0.113439s, CPU: 0.163114s
 Pruning: Varied inference times based on the degree of pruning, with slight improvements over baseline.
