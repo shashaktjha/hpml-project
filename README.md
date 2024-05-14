@@ -33,7 +33,9 @@ This project focuses on evaluating the impact of model compression techniques on
 - `quantization.py`: Implements and evaluates the model quantization process.
 - `bash.sh`: Bash script for running the project on the NYU HPC cluster with SLURM job scheduling.
 
+
 ## Example Commands to Execute the Code
+  Upload the specific code to NYU HPC and change output file and python file name in the last line of batch file then run 
 ```bash
 sbatch bash.sh
 ```
