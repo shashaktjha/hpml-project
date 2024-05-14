@@ -36,17 +36,17 @@ This project focuses on evaluating the impact of model compression techniques on
 ## Example Commands to Execute the Code
 ```bash
 sbatch bash.sh
-'''
+```
 
 
-Results
-Inference Time Improvements
+### Results
+## Inference Time Improvements
 Baseline Inference Time: GPU: 0.142559s, CPU: 0.227092s
 Quantization: Reduced inference time to GPU: 0.113439s, CPU: 0.163114s
 Pruning: Varied inference times based on the degree of pruning, with slight improvements over baseline.
 Knowledge Distillation: Increased inference times due to training overhead but reduced when compared to the teacher model alone.
 
-Observations:
+## Observations:
 Quantization proved effective in reducing both the model size and inference times across both CPU and GPU, showcasing its utility for deployment in resource-constrained environments.
 Pruning showed less consistent results with slight fluctuations in inference times, suggesting a dependency on the degree of pruning and the nature of the data.
 Knowledge Distillation resulted in a more compact model with reduced inference capabilities compared to the original full-sized model but offered substantial efficiency improvements over the non-distilled version.
